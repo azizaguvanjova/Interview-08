@@ -35,14 +35,14 @@ const existingAccount = accounts.find(
 )
 
 if(existingAccount){
-alert(`Hoş geldınız ${username}!`)
+alert(`login başarli,selam ${username}!`)
 resetForm()
 return
 }
 
 if(username.length >= 6 && password.length >= 6){
   setAccounts([...accounts,{username,password}])
-  alert(`Hoş geldınız ${username}!`)
+  alert(`yeni hesap oluşturuldu,merhaba ${username}!`)
   resetForm()
 }else{
   alert('Kullanıcı adı ve parolanız en az 6 karakter olmalı')
